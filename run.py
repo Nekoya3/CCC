@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request #Flaskの操作に必要なモジュールをインポート
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy import Column, Integer, String #DBのテーブルの型をインポート
-
+import os
 
 #Flaskの立ち上げ
 app = Flask(__name__,static_folder='app/static', template_folder='app/templates')
@@ -59,4 +59,6 @@ def detail():
 
 #おまじない
 if __name__ == "__main__":
-    app.run()
+    port = int(os.getenv("PORT"))
+
+    app.run(host="0.0.0.0", port=port, threaded=True)
