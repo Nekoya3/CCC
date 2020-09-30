@@ -4,31 +4,19 @@
     margin:0px;
 }
 
-@media screen and (max-width: 1025px){  /*タブレット版*/
 
-    
-    body{
-        /*
-        height: 100%;
-        width: 100%;
-        */
-        background-image: url("/static/images/Top_page.svg");
-        background-position: left top;
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-    
-    header > #background{
-        height:10vh;
+
+
+    header {
+        height:95px;
         width:100%;
-        background-image: url("/static/images/header.svg");
-        background-position:left 0% top 10%;
-        background-size:100% auto;
+        background-image: url("./../static/images/header.svg");
+        background-position:left bottom;
+        background-size:cover;
         background-repeat: no-repeat;
 
     }
     
-    /*縦はpxで表示、font-sizeもpxで表示*/
     
     header > #header_slogan{
         position: absolute;
@@ -50,18 +38,39 @@
     #main{
         width: 100%;
         height: 80vh;
+        background-image: url("./../static/images/Top_page.svg");
+        background-position:left 0% top 10%;
+        background-size:100% auto;
+        background-repeat: no-repeat;
     }
     
-    #main_slogan{
+    #main_slogan1{
         position: absolute;
-        width: auto;/*58.7%*/
-        height: auto;/*5.5%*/
+        width: auto;
+        height: auto;
         padding-left: 5.6%;
-        padding-top: 30%;/*13.4%*/
+        padding-top: 30%;
         font-family: Average Sans;
         font-style: normal;
         font-weight: normal;
-        font-size: 4vw;/*5vw*/
+        font-size: 4vw;
+        line-height: 26px;
+        letter-spacing: 0.03em;
+    
+        color: #000000;
+        
+    }
+
+    #main_slogan2{
+        position: absolute;
+        width: auto;
+        height: auto;
+        padding-left: 5.6%;
+        padding-top: 30%;
+        font-family: Average Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 4vw;
         line-height: 26px;
         letter-spacing: 0.03em;
     
@@ -69,9 +78,7 @@
         
     }
     
-    #sub{
-        font-size: 2.5vw;
-    }
+    
     
     #button > img{
         position: absolute;
@@ -84,7 +91,7 @@
         position: absolute;
         width: 100%;
         height: 10vh;
-        background-image: url("/static/images/footer.svg");
+        background-image: url("./../static/images/footer.svg");
         background-repeat: no-repeat;
         background-size: cover;
 
@@ -106,213 +113,59 @@
         font-size: 3vw;
     }
     
-    
-}
 
 @media screen and (max-width: 560px){  /*スマホ*/
-
-    body{
-        /*
-        height: 100%;
-        width: 100%;
-        */
-        background-image: url("./../images/Top_page.svg");
-        background-position: left top;
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-    
-    header > #background{
-        height:10vh;
-        width:100%;
-        background-image: url("./../images/header.svg");
-        background-position:left 0% top 10%;
-        background-size:100% auto;
-        background-repeat: no-repeat;
-
-    }
-    
-    /*縦はpxで表示、font-sizeもpxで表示*/
-    
-    header > #header_slogan{
-        position: absolute;
-        width: 310px;
-        height: 80px;
-        left: 30px;
-        top: 30px;
-
-        font-family: Alegreya Sans SC;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 55px;
-        line-height: 68px;
-        letter-spacing: 0.07em;
-        color: #544C09;
-    }
-    
-    
-    #main{
-        width: 100%;
-        height: 80vh;
-    }
     
     #main_slogan{
-        position: absolute;
-        width: auto;/*58.7%*/
-        height: auto;/*5.5%*/
-        padding-left: 5.6%;
-        padding-top: 30%;/*13.4%*/
-        font-family: Average Sans;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 6vw;/*5vw*/
-        line-height: 26px;
-        letter-spacing: 0.03em;
-    
-        color: #000000;
-        
+        font-size: 6vw;
     }
     
-    #sub{
-        font-size: 4vw;
-    }
+  
     
     #button > img{
-        position: absolute;
         width:100%;
         left: 0%;
         top: 50%;
     }
     
     footer{
-        position: absolute;
         top:105%;
         left:0%;
-        width: 100%;
-        height: 10vh;
-        background-image: url("./../images/footer.svg");
-        background-repeat: no-repeat;
-        background-size: cover;
-
     }
-    
-    #detail_site{
-        position:absolute;
-        line-height: 50%;
-        left: 20%;
-        top: 50%;
-        font-size: 3vw;
-    }
-    
-    #detail_contest{
-        position:absolute;
-        line-height: 50%;
-        right: 20%;
-        top: 50%;
-        font-size: 3vw;
-    }
-    
     
 }
 
 
 @media screen and (min-width: 1025px){ /*パソコン*/
     body{
-        /*
-        height: 100%;
-        width: 100%;
-        */
-        background-image: url("/static/images/Top_pagePC.svg");
-        background-position: left top;
-        background-size: cover;
-        background-repeat: no-repeat;
+        background-image: url("./../static/images/Top_pagePC.svg");
+
     }
     
     header > #background{
-        height:10vh;
-        width:100%;
-        background-image: url("/static/images/headerPC.svg");
-        background-position:left 0% top 10%;
-        background-size:100% auto;
-        background-repeat: no-repeat;
-
-    }
-    
-    /*縦はpxで表示、font-sizeもpxで表示*/
-    
-    header > #header_slogan{
-        position: absolute;
-        width: 310px;
-        height: 80px;
-        left: 50px;
-        top: 30px;
-
-        font-family: Alegreya Sans SC;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 55px;
-        line-height: 68px;
-        letter-spacing: 0.07em;
-        color: #544C09;
+        background-image: url("./../static/images/headerPC.svg");
     }
     
     
-    #main{
-        width: 100%;
-        height: 80vh;
-    }
+   
     
     #main_slogan{
-        position: absolute;
-        width: auto;/*58.7%*/
-        height: auto;/*5.5%*/
-        padding-left: 5.6%;
-        padding-top: 5%;/*13.4%*/
-        font-family: Average Sans;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 3vw;/*5vw*/
-        line-height: 26px;
-        letter-spacing: 0.03em;
-    
-        color: #000000;
-        
+        padding-top: 5%;
+        font-size: 3vw;
     }
     
-    #sub{
-        font-size: 2vw;
-    }
     
     #button > img{
-        position: absolute;
         width:30%;
-        right:0%;
-        bottom:5%;
     }
     
-    footer{
-        position: absolute;
-        width: 100%;
-        height: 10vh;
-        background-image: url("/static/images/footer.svg");
-        background-repeat: no-repeat;
-        background-size: cover;
-
-    }
+    
     
     #detail_site{
-        position:absolute;
-        line-height: 50%;
-        left: 20%;
-        top: 50%;
         font-size: 2vw;
     }
     
     #detail_contest{
-        position:absolute;
-        line-height: 50%;
-        right: 20%;
-        top: 50%;
         font-size: 2vw;
     }
     
