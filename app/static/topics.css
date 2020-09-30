@@ -134,3 +134,12 @@ header{
     background: #DBDBDB;
     justify-content: center;
 }
+
+.back {
+    display: block;
+    width: 291px;
+    height: 41px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
