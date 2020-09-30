@@ -6,4 +6,7 @@
     header > #header_slogan{
         font-size: 50px;
     }
+    main{
+        background-image:url(./../static/images/topics_pagePC.svg)
+    }
 }

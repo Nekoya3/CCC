@@ -5,6 +5,12 @@
     text-decoration: none;
 }
 
+main{
+    background-image:url("./../static/images/topics_page.svg");
+    background-position:left top;
+    background-size:cover;
+}
+
 header{
     height:95px;
     width:100%;
