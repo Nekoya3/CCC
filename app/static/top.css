@@ -5,8 +5,6 @@
 }
 
 
-
-
     header {
         height:95px;
         width:100%;
@@ -31,6 +29,7 @@
     }
     
     
+
     #main{
         width: 100%;
         height: 80vh;
@@ -41,34 +40,26 @@
     }
     
     #main_slogan1{
-        position: absolute;
-        width: auto;
-        height: auto;
-        padding-left: 5.6%;
-        padding-top: 30%;
         font-family: Average Sans;
         font-style: normal;
-        font-weight: normal;
-        font-size: 4vw;
-        line-height: 26px;
+        font-weight: bold;
+        font-size: 15px;
         letter-spacing: 0.03em;
+
+        margin: 50px 0 10px 10px;
     
         color: #000000;
         
     }
 
     #main_slogan2{
-        position: absolute;
-        width: auto;
-        height: auto;
-        padding-left: 5.6%;
-        padding-top: 30%;
         font-family: Average Sans;
         font-style: normal;
-        font-weight: normal;
-        font-size: 4vw;
-        line-height: 26px;
+        font-weight: bold;
+        font-size: 25px;
         letter-spacing: 0.03em;
+
+        margin-left: 10px;
     
         color: #000000;
         
@@ -76,39 +67,51 @@
     
     
     
-    #button > img{
+    #button {
         position: absolute;
-        width:50%;
+        display: block;
+        background-image: url(./../static/images/Top_button.svg);
+        background-position:left top;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 400px;
+        bottom: 0%;
         right: 0%;
-        bottom: 5%;
     }
     
     footer{
         position: absolute;
         width: 100%;
-        height: 10vh;
-        background-image: url("./../static/images/footer.svg");
-        background-repeat: no-repeat;
-        background-size: cover;
+        height: 100px;
+
+        background-color: #686769;
+
+        display: flex;
 
     }
+
+#detail_site {
+    text-decoration: none;
+    color: white;
+    display: block;
+    width: 50%;
+    border-right: solid 1px white;
+    margin: 40px 0;
+    text-align: center;
+    font-size: 15px;
+}
+
+#name {
     
-    #detail_site{
-        position:absolute;
-        line-height: 50%;
-        left: 20%;
-        top: 50%;
-        font-size: 3vw;
-    }
-    
-    #detail_contest{
-        position:absolute;
-        line-height: 50%;
-        right: 20%;
-        top: 50%;
-        font-size: 3vw;
-    }
-    
+    border-left: solid 1px white;
+    width: 50%;
+    color: white;
+    font-size: 15px;
+
+    margin: 40px 0;
+    text-align: center;
+}
 
 @media screen and (max-width: 560px){  /*スマホ*/
     
@@ -141,28 +144,9 @@
     header > #background{
         background-image: url("./../static/images/headerPC.svg");
     }
-    
-    
-   
-    
-    #main_slogan{
-        padding-top: 5%;
-        font-size: 3vw;
-    }
-    
-    
+
     #button > img{
         width:30%;
-    }
-    
-    
-    
-    #detail_site{
-        font-size: 2vw;
-    }
-    
-    #detail_contest{
-        font-size: 2vw;
     }
     
 }
