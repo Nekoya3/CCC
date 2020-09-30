@@ -4,10 +4,6 @@
     margin:0px;
 }
 
-
-
-    
-    
     header > #background{
         height:10vh;
         width:100%;
@@ -18,7 +14,6 @@
 
     }
     
- 
     
     header > #header_slogan{
         position: absolute;
@@ -115,8 +110,6 @@
 
 
 @media screen and (min-width: 1025px){ /*パソコン*/
-    
-    
     #main_title {
         font-size: 3.5vw;
     }
@@ -132,14 +125,5 @@
 
     #back_button > img{
         width:30%;
-    }
-    
-    
-    
-    
-
-    
+    }    
 }
-
-
-
