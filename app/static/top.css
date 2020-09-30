@@ -19,17 +19,13 @@
     
     
     header > #header_slogan{
-        position: absolute;
-        width: 310px;
-        height: 80px;
-        left: 50px;
-        top: 30px;
-
+        position:absolute;
+        top:2%;
+        left:6%;
         font-family: Alegreya Sans SC;
         font-style: normal;
         font-weight: bold;
-        font-size: 55px;
-        line-height: 68px;
+        font-size: 40px;
         letter-spacing: 0.07em;
         color: #544C09;
     }
