@@ -4,126 +4,65 @@
     margin:0px;
 }
 
-    header > #background{
-        height:10vh;
+    header {
+        height:95px;
         width:100%;
         background-image: url("./../static/images/header.svg");
-        background-position:left 0% top 10%;
-        background-size:100% auto;
+        background-position:left bottom;
+        background-size:cover;
         background-repeat: no-repeat;
 
     }
     
     
     header > #header_slogan{
-        position: absolute;
-        width: 310px;
-        height: 80px;
-        left: 50px;
-        top: 30px;
-
+        position:absolute;
+        top:2%;
+        left:6%;
         font-family: Alegreya Sans SC;
         font-style: normal;
         font-weight: bold;
-        font-size: 55px;
-        line-height: 68px;
+        font-size: 40px;
         letter-spacing: 0.07em;
         color: #544C09;
     }
     
-    
     #main{
-        position: absolute;
-        width: 100%;
-        height: 80vh;
+        width: 90%;
+        margin: auto;
     }
 
     #main_title {
-        position: absolute;
-        width: 90%;
-        height: 5%;
-        left: 3%;
-        top: 5%;
         font-family: Alegreya Sans SC;
         font-style: normal;
         font-weight: bold;
-        font-size: 4vw;
-        line-height: 24px;
+        font-size: 20px;
         letter-spacing: 0.07em;
         color: #000000;
         border-bottom: solid 1px black;
+        margin: 10px 0;
     }
 
 
     #main_contents {
-        position:absolute;
-        width: 90%;
-        height: auto;
-        left: 4%;
-        top: 15%;
-        font-size: 3vw;
-        text-align: left;
+        font-size: 15px;
     }
 
 
     #back_button{
-        position: absolute;
-        width: 100%;
-        height: 10vh;
-        bottom:0%;
-        text-align: center;
+        display: block;
+        width: 291px;
+        height: 41px;
+        margin: auto;
+        margin-top: 50px;
     }
 
-    #back_button > img{
-        width:40%;
+@media screen and (min-width: 540px) { /*PC用*/
+    header{
+        background-image: url("./../static/images/headerPC.svg");
+
     }
-    
-    
-    
-    
-@media screen and (max-width: 560px){  /*スマホ*/
-
-
-    
     header > #header_slogan{
-        width: 80%;
-        height: 5vh;
-        left: 5%;
-        top: 3%;
-       
-        font-size: 45px;
+        font-size: 50px;
     }
-
-    #main_contents {
-        font-size: 90%;
-    }
-
-
-
-    #back_button > img{
-        padding-top:5%;
-        width:50%;
-    }
-    
-   
-}
-
-
-@media screen and (min-width: 1025px){ /*パソコン*/
-    #main_title {
-        font-size: 3.5vw;
-    }
-
-
-   
-    
-    #main_contents {
-        font-size: 130%;
-    }
-
-
-
-    #back_button > img{
-        width:30%;
-    }    
 }
